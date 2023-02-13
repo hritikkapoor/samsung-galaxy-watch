@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .galaxy {
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        margin-top: 2px;
+    }
+
+    .X {
+        color: yellow;
+        margin-left: 152px;
+        font-size: 45px;
+        font-weight: 700;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  
+
+    .list,
+    ul { position: fixed;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        list-style: none;
+        position: absolute;
+        display: flex;
+        gap: 50px;
+        margin-left: 200px;
+        cursor: pointer;
+
+
+    }
+    .list ul li a{
+        color: white;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .a1 {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 620px;
+    }
+
+    .a2 {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        margin-left: 465px;
+        margin-top: 230px;
+        position: absolute;
+    }
+    @media  (max-width: 640px)  {
+        .a2  {
+             
+            font-size: 30px;
+          margin-left: 620px;
+            
+            
+        }
+        
+        .a1{
+             display: none;
+            
+    }
+        }
+
+
+
+    .a3 {
+        color: white;
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 630px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    @media  (max-width: 640px)  {
+        .a3 {
+             
+            font-size: 25px;
+            margin-left: 570px ;
+            
+            
+        }
+        .galaxy {
+            margin-left: 100px;
+        }
+        .X {
+            margin-left: 255px;
+        }
+       
+    }
+
+    .a4 {
+        background-color: yellow;
+        color: black;
+        height: 25px;
+        width: 160px;
+        border-radius: 40px;
+        position: absolute;
+        margin-top: 340px;
+        margin-left: 540px;
+        text-align: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 5px;
+        cursor: pointer;
+
+    }
+ 
+
+    .a5 {
+        border: solid 2px white;
+        height: 25px;
+        width: 160px;
+        border-radius: 40px;
+        color: white;
+        position: absolute;
+        margin-top: 340px;
+        margin-left: 740px;
+        text-align: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+
+    .img {
+        margin-left: 240px;
+        margin-top: 380px;
+        position: absolute;
+    }
+
+    .next1 {
+        background-color: white;
+        width: 1515px;
+        height: 900px;
+        position: absolute;
+        margin-top: 900px;
+    }
+
+    .b1 {
+        color: black;
+        font-size: 60px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        margin-top: 970px;
+        margin-left: 770px;
+    }
+    @media  (max-width: 1040px)  {
+        .b1 {
+             width: 100%;
+        }
+        .b3{
+            width: 100%;
+        }
+        .b4{
+            width: 100%;
+            padding-top: 20px;
+          
+        }
+        .b5{
+            width: 100%;
+        }
+    }
+
+
+    .b2 {
+        color: black;
+        font-size: 60px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        margin-top: 1040px;
+        margin-left: 770px;
+    }
+
+    .img1 {
+        position: absolute;
+        margin-top: 1020px;
+        margin-left: 80px;
+    }
+
+    .b3 {
+        margin-top: 1130px;
+        margin-left: 770px;
+        position: absolute;
+        color: gray;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .b4 {
+        margin-top: 1200px;
+        margin-left: 770px;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+
+
+    }
+
+    .b5 {
+        margin-top: 1250px;
+        margin-left: 770px;
+        position: absolute;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .b6 {
+        background-color: yellow;
+        color: black;
+        height: 25px;
+        width: 160px;
+        border-radius: 40px;
+        position: absolute;
+        margin-top: 1310px;
+        margin-left: 770px;
+        text-align: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+
+    .next2 {
+        position: absolute;
+        margin-top: 1650px;
+    }
+
+    .c1 {
+        color: black;
+        font-size: 60px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        margin-top: 1750px;
+        margin-left: 50px;
+        font-weight: 600;
+
+    }
+    @media  (max-width: 1040px)  {
+        .c1 {
+             width: 100%;
+            
+        }
+        .c2{
+            width: 100%;
+            padding-top: 70px;
+        }
+        .c3{
+            width: 100%;
+            padding-top: 30px;
+        }
+        .c4{
+            width: 100%;
+            padding-top: 28px;
+            
+        }
+    }
+
+    .c2 {
+        color: black;
+        font-size: 60px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        margin-top: 1820px;
+        margin-left: 50px;
+        font-weight: 600;
+
+    }
+
+    .c3 {
+        margin-top: 1930px;
+        margin-left: 50px;
+        position: absolute;
+        color: gray;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .c4 {
+        margin-top: 2000px;
+        margin-left: 50px;
+        position: absolute;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .c5 {
+        background-color: yellow;
+        color: black;
+        height: 25px;
+        width: 160px;
+        border-radius: 40px;
+        position: absolute;
+        margin-top: 2060px;
+        margin-left: 50px;
+        text-align: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+
+    .next3 {
+        position: absolute;
+        margin-top: 2400px;
+        height: 600px;
+        width: 1515px;
+    }
+
+    .d1 {
+        position: absolute;
+        margin-top: 2750px;
+        margin-left: 300px;
+    }
+
+    .d2 {
+        color: white;
+        font-size: 60px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        margin-top: 2450px;
+        margin-left: 430px;
+        font-weight: 600;
+
+    }
+    @media  (max-width: 1040px)  {
+        .d2 {
+             width: 100%;
+             font-size: 40px;
+             padding-left: 100px;
+             padding-top: 30px;
+            
+        }
+        .d3{
+             width: 100%;
+             padding-left: 300px;
+            
+            
+        }
+    }
+
+    .d3 {
+        color: aliceblue;
+        margin-top: 2550px;
+        margin-left: 200px;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .next4 {
+        width: 1515px;
+        height: 740px;
+        background-color: white;
+        position: absolute;
+        margin-top: 3200px;
+    }
+
+    .e1 {
+        margin-top: 3250px;
+        margin-left: 550px;
+        color: black;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    @media  (max-width: 1040px)  {
+    .e1 {
+             width: 100%;
+            
+            
+        }
+        .e2 {
+             display: none;
+            
+        }
+    }
+
+    .e2 {
+        margin-top: 3310px;
+        margin-left: 590px;
+        color: darkgray;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+    }
+
+    .e3 {
+        margin-top: 3450px;
+        margin-left: 100px;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    .e3 :hover {
+        transform: translateY(-15px);
+    }
+
+    .e4 {
+        margin-top: 3450px;
+        margin-left: 550px;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    .e4 :hover {
+        transform: translateY(-15px);
+    }
+
+    .e5 {
+        margin-top: 3450px;
+        margin-left: 970px;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    .e5 :hover {
+        transform: translateY(-15px);
+    }
+
+    .e6 {
+        position: absolute;
+        margin-top: 3780px;
+        margin-left: 175px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    @media  (max-width: 1040px)  {
+        .e6{
+            width: 100%;
+        }
+        .e8{
+            width: 100%;
+        }
+        .e10{
+            width: 100%;
+        }
+        }
+    
+
+    .e7 {
+        position: absolute;
+        margin-top: 3800px;
+        margin-left: 230px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: red;
+
+
+    }
+
+    .e8 {
+        position: absolute;
+        margin-top: 3780px;
+        margin-left: 635px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .e9 {
+        position: absolute;
+        margin-top: 3800px;
+        margin-left: 690px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: red;
+
+
+    }
+
+    .e10 {
+        position: absolute;
+        margin-top: 3780px;
+        margin-left: 1060px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .e11 {
+        position: absolute;
+        margin-top: 3800px;
+        margin-left: 1120px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: red;
+
+
+    }
+
+    .next5 {
+        position: absolute;
+        margin-top: 3950px;
+        background-color: white;
+        width: 1515px;
+        height: 700px;
+    }
+
+    .f1 {
+
+        margin-top: 4100px;
+        margin-left: 750px;
+        color: black;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    @media  (max-width: 1040px)  {
+        .f1{
+            width: 100%;
+        }
+       
+        .f2{
+            width: 100%;
+            padding-top: 35px;
+        }
+        .f3{
+            width: 100%;
+            padding-top: 35px;
+        }
+    }
+    .f2 {
+
+        margin-top: 4170px;
+        margin-left: 750px;
+        color: black;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .f3 {
+        color: grey;
+        margin-top: 4270px;
+        margin-left: 750px;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .f4{
+        margin-top: 4370px;
+        margin-left: 750px;
+        position: absolute;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+
+    }
+    .f5 {
+        background-color: yellow;
+        color: black;
+        height: 25px;
+        width: 160px;
+        border-radius: 40px;
+        position: absolute;
+        margin-top: 4420px;
+        margin-left: 750px;
+        text-align: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+    .next6{
+        position: absolute;
+        margin-top: 4650px;
+    }
+    .g1 {
+
+        margin-top: 5050px;
+        margin-left: 360px;
+        color: white;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    @media  (max-width: 1040px)  {
+        .g1{
+            width: 100%;
+            padding-left: 120px;
+        }
+        .g2{
+            width: 100%;
+            padding-top: 45px;
+        }
+    }
+    .g2 {
+        color: white;
+        margin-top: 5120px;
+        margin-left: 450px;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .last{
+        margin-top: 5300px;
+        height: 750px;
+        width: 1515px;
+        background-color: white;
+        position: absolute;
+    }
+    .h1{
+        margin-top: 5400px;
+        margin-left: 450px;
+        color: black;
+        position: absolute;
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    @media  (max-width: 1040px)  {
+        .h1{
+            width: 100%;
+            font-size: 35px;
+        
+        }
+    }
+    .h2{
+        margin-top: 5500px;
+        margin-left: 450px;
+        color: black;
+        position: absolute;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .h3{
+        margin-top: 5500px;
+        margin-left: 850px;
+        color: black;
+        position: absolute;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .h4{
+        margin-top: 5650px;
+        margin-left: 450px;
+        color: black;
+        position: absolute;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .h5{
+        margin-top: 5800px;
+        margin-left: 450px;
+        color: black;
+        position: absolute;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .submit{
+        background-color: orange;
+        color: black;
+        height: 35px;
+        width: 160px;
+        border-radius: 50px;
+        position: absolute;
+        margin-top: 5960px;
+        margin-left: 450px;
+        text-align: center;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 5px;
+        cursor: pointer;
+   
+        
+    }
+    .h2 input,.h3 input,.h4 input{
+        height: 35px;
+        width: 200px;
+        border-radius: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .h5 input{
+        height: 65px;
+        width: 300px;
+        border-radius: 35px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    *{
+        scroll-behavior: smooth;
+    }
+    
+
+</style>
+
+<body style="background-color: black;">
+    <div class="galaxy">Galaxy</div>
+    <div class="X">X</div>
+    <div class="list">
+        <ul>
+            <li>Home</li>
+            <li>BuyNow</li>
+            <li>Features</li>
+            <li><a href="#Shop">Shop</a>
+            </li>
+            <li><a href="#Product">Product</a></li>
+            <li>Blogs</li>
+            <li>Pages</li>
+        </ul>
+
+    </div>
+    <div class="a1">A Full Year Of Fitness</div>
+    <div class="a2">Samsung Galaxy X</div>
+    <div class="a3">40mm|42mm|46mm</div>
+    <div class="a4">Shop Now</div>
+    <div class="a5">View Details</div>
+    <div class="img">
+        <img src="img-slider.jpg">
+    </div>
+    <div class="next1"></div>
+    <div class="b1">Variant Of</div>
+    <div class="b2">Colors.</div>
+    <div class="img1">
+        <img src="img-home-01-534x440.jpg">
+    </div>
+    <div class="b3">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Rem facere amet provident molestias
+        exercitationem<br> aspernatur omnis numquam quam.</div>
+
+    <div class="b4">Midnight Black</div>
+
+    <div class="b5">$290.00</div>
+
+    <div class="b6">Buy Now</div>
+    <div class="next2">
+        <img src="img-home-02.jpg" height="700px" width="1515px">
+    </div>
+
+    <div class="c1">Water & Dust</div>
+
+    <div class="c2">Resistance</div>
+
+    <div class="c3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Debitis suscipit dignissimos tempore
+        aliquid libero eveniet.
+
+    </div>
+
+    <div class="c4">$350.00</div>
+
+    <div class="c5">Buy Now</div>
+
+    <div class="next3"></div>
+
+    <div class="d1">
+        <img src="img-home-03.jpg">
+    </div>
+
+    <div class="d2">Heart Rate Tracker</div>
+    <div class="d3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ab veniam nulla accusamus, ex, vel
+        autem quovoluptatibus magniarchitecto <br>similique saepe minus ratione perferendis corrupti fugit. Excepturi,
+        esse dolorem.</div>
+
+    <div id="Shop" class="next4"></div>
+    <div class="e1">Select Your Model</div>
+    <div class="e2">Lorem ipsum dolor sit amet consectetur.</div>
+    <div class="e3">
+        <img src="product-39.jpg" height="300px" width="350px">
+    </div>
+    <div class="e4">
+        <img src="product-05.jpg" height="300px" width="350px">
+    </div>
+    <div class="e5">
+        <img src="product-09.jpg" height="300px" width="350px">
+    </div>
+    <div class="e6">FREDERIQUE CONSTANT</div>
+    <div class="e7">480.00$</div>
+    <div class="e8">FRENCH CONNECTION</div>
+    <div class="e9">470.00$</div>
+    <div class="e10">HUGO BOSS ORANGE</div>
+    <div class="e11">300.00$</div>
+
+    <div class="next5">
+        <img src="img-home-05.jpg">
+    </div>
+    <div class="f1">QUICK CHARGE</div>
+    <div class="f2"> WIRELESSLY</div>
+    <div class="f3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda<br> aspernatur corporis aliquid?
+        Officiis
+        
+    </div>
+    <div class="f4">$590.00 </div>
+    <div class="f5">Buy Now</div>
+
+    <div class="next6">
+        <img src="img-home-04.jpg" width="1515px " height="650px">
+    </div>
+    <div class="g1"> TRACK YOUR WORKOUTS  </div>
+    <div class="g2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda<br> aspernatur corporis aliquid?
+        Officiis eaque, corporis<br> doloremque perspiciatis nisi saepe possimus recusandae impedit<br></div>
+
+
+        <div class="last"></div>
+        <div class="h1">LEAVE YOUR QUESTION </div>
+        <div class="h2">Name:<br>
+            <input type="text"> 
+        
+                </div>
+        <div class="h3">Email: <br>
+        <input type="text" placeholder="eg xyz@gmail.com"></div>
+        <div class="h4">Subject:<br>
+        <input type="text"></div>
+        <div class="h5">Message:<br>
+        <input type="text"></div>
+        <div class="submit">Submit</div>
+</body>
+
+</html>
